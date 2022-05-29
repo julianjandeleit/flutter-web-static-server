@@ -1,4 +1,4 @@
 .PHONY: install
 install:
-	go build
+	go build -buildvcs=false
 	cp static-server /usr/local/bin/
