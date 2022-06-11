@@ -13,10 +13,11 @@ func main() {
 		handle_dir = os.Args[1]
 	}
 
-	fmt.Println("serving " + handle_dir)
+	port := ":9000"
+	fmt.Println("serving " + handle_dir + " " + port)
 
 	http.Handle("/", http.FileServer(http.Dir(handle_dir)))
-	err := http.ListenAndServe(":9000", nil)
+	err := http.ListenAndServe(port, nil)
 	if err != nil {
 		log.Fatal(err)
 	}
