@@ -11,7 +11,7 @@ or build executable only with go build main.go
 There exists a Makefile for Windows, used as ´make install -f MakefileWin´.
 Assumes ´/bin/´ exists and is in path.
 
-Dependencies like go and sudo can be installed using [scoop](scoop.sh).
+Dependencies like go and sudo can be installed using [scoop](http://scoop.sh).
 
 ## Development
 Currently, the directory that is served is the current directory. It is served on 0.0.0.0:9000. This configuration is currently hardcoded.
