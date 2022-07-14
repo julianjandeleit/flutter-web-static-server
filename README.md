@@ -8,8 +8,8 @@ it builds the executable _static-server_ and then installs the file
 or build executable only with go build main.go
 
 ### Windows
-There exists a Makefile for Windows, used as ´make install -f MakefileWin´.
-Assumes ´/bin/´ exists and is in path.
+There exists a Makefile for Windows, used as `make install -f MakefileWin`.
+Assumes `/bin/` exists and is in path.
 
 Dependencies like go and sudo can be installed using [scoop](http://scoop.sh).
 
