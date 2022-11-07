@@ -24,11 +24,17 @@ func FixMimeTypes() {
 
 func main() {
 	var handle_dir = "./"
+	var port = "9000"
 	if len(os.Args) == 2 {
 		handle_dir = os.Args[1]
 	}
+	
+	if len(os.Args) == 3 {
+		port = os.Args[2]
+	}
+	
+	port = ":" + port
 
-	port := ":9000"
 	fmt.Println("serving " + handle_dir + " " + port)
 
 	FixMimeTypes()
